@@ -30,7 +30,6 @@ Route::get('/about', function () {
 });
 
 
-
 Route::get('/blog', [PostController::class, 'index']);
 
 
