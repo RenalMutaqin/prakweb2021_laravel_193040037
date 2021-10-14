@@ -11,6 +11,7 @@
     <p>{{ $post->body}}</p>
     </article>
 
+    
 @endforeach
 
 @endsection

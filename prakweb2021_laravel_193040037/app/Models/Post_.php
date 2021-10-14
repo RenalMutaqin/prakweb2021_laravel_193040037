@@ -30,5 +30,6 @@ class Post
         $posts = static::all();
 
     return $posts->firstWhere('slug', $slug);
-    }
+ 
+}
 }
