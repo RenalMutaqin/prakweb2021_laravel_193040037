@@ -3,8 +3,8 @@
 @section('container')
 <h1>ABOUT ME</h1>
 
-<h3>{{ $nama }}</h3>
+<h3>{{ $name }}</h3>
 <p>{{ $email }}</p>
-<img src="img/{{ $image }}" alt="{{ $nama }}" width="200" class="img-thumbnail rounded-circle">
+<img src="img/{{ $image }}" alt="{{ $name }}" width="200" class="img-thumbnail rounded-circle">
 @endsection
 
