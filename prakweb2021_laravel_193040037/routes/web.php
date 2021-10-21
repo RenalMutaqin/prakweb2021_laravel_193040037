@@ -4,6 +4,8 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\User;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,9 +25,9 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about', [
         "title" => "anout",
-        "name" => "Renal Mutaqin",
-        "email" => "renalmutaqin8@gmail.com",
-        "image" => "foto.jpeg"
+        "name" => "Muhammad Restu",
+        "email" => "muhammadrestu1909@gmail.com",
+        "image" => "unpas.png"
     ]);
 });
 
@@ -48,5 +50,12 @@ Route::get('/categories/{category:slug}', function(Category $category){
         'title'=> $category->name,
         'posts'=> $category->posts,
         'category'=> $category->name
+    ]);
+});
+
+route::get('/authors/{author:username}' , function(User $author){
+    return view('posts', [
+        'title'=> 'User Posts',
+        'posts'=> $author->posts
     ]);
 });
