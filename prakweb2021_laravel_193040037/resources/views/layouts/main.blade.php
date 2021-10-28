@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     
     <link rel="stylesheet" href="/css/style.css">
-    <title>Restu blog | {{ $title }}</title>
+    <title>Renal blog | {{ $title }}</title>
   </head>
   <body>
     @include('partials.navbar')
