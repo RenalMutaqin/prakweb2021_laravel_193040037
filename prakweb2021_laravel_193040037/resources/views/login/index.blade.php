@@ -11,10 +11,11 @@
 
 
   @if(session()->has('success'))
+  @endif
     <main class="form-signin">
     <h1 class="h3 mb-3 fw-normal text-center">Please login</h1>
   <form>
-    @endif
+   
     
 
     <div class="form-floating">
